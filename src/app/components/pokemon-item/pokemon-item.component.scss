@@ -4,8 +4,9 @@
 
 @function map-deep-get($map, $keys...) {
   @each $key in $keys {
-      $map: map-get($map, $key);
+    $map: map-get($map, $key);
   }
+
   @return $map;
 }
 
@@ -14,14 +15,10 @@
 }
 
 $sex-colors: (
-  male: (
-    color: $primary,
-    text: white
-  ),
-  female: (
-    color: #ef99a7,
-    text: #4d4d4d
-  )
+  male: (color: $primary,
+    text: white),
+  female: (color: #ef99a7,
+    text: #4d4d4d)
 );
 
 .pokemon-item {
@@ -41,6 +38,6 @@ $sex-colors: (
   }
 
   .image {
-    width: 100%;
+    width: 50px;
   }
 }
