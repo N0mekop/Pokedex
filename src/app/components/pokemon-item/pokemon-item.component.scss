@@ -15,10 +15,10 @@
 }
 
 $sex-colors: (
-  male: (color: $primary,
-    text: white),
-  female: (color: #ef99a7,
-    text: #4d4d4d)
+  male: (color: #7ed6df,
+    text: #212121),
+  female: (color: #ff7979,
+    text: #212121)
 );
 
 .pokemon-item {

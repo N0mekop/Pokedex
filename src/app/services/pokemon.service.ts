@@ -27,6 +27,12 @@ export class PokemonService {
       picture: 'https://www.pokepedia.fr/images/thumb/4/42/Florizarre-RFVF.png/250px-Florizarre-RFVF.png',
       level: 51,
     },
+    {
+      name: 'dracaufeu',
+      sex: 'female',
+      picture: 'https://www.pokepedia.fr/images/thumb/1/17/Dracaufeu-RFVF.png/250px-Dracaufeu-RFVF.png',
+      level: 100,
+    },
   ];
 
   constructor() { }

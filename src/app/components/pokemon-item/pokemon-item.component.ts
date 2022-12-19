@@ -29,6 +29,6 @@ export class PokemonItemComponent {
   }
 
   generateColor() {
-    return this.level > 50 ? '#00dd00' : '#882222';
+    return this.level > 50 ? '#198754' : '#dc3545';
   }
 }
