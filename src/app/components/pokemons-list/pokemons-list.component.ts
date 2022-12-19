@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PokemonService } from 'src/app/services/pokemon.service';
 import { Pokemon, PokemonSex } from 'src/app/typings/pokemon';
@@ -11,8 +12,9 @@ import { Pokemon, PokemonSex } from 'src/app/typings/pokemon';
   styleUrls: ['./pokemons-list.component.scss'],
 })
 export class PokemonsListComponent {
+/*   PokemonsListComponent = new FormControl(''); */
   isButtonDisabled = true;
-  currentPokemonName = 'Pokémon';
+  currentPokemonName = '';
   currentPokemonPicture?: string;
   currentPokemonSex: PokemonSex = 'male';
   hasAddedAPokemon = false;

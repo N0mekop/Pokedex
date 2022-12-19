@@ -2,7 +2,7 @@
 
 <div class="mb-4 mt-4 row d-flex justify-content-center">
   <div class="col-3">
-    <input type="text" class="form-control" placeholder="Pokémon" [(ngModel)]="currentPokemonName">
+    <input type="text" class="form-control" placeholder="Nom" [(ngModel)]="currentPokemonName">
     <input type="text" class="form-control" placeholder="Image" [(ngModel)]="currentPokemonPicture">
     <select [(ngModel)]="currentPokemonSex" class="gender-choice">
       <option ngValue="male">Male</option>
@@ -17,7 +17,7 @@
 </div>
 
 <div class="mb-4 text-success d-flex justify-content-center" *ngIf="hasAddedAPokemon; else noPokemon">
-  Un Pokémon a été ajouté ! Son nom est : {{ currentPokemonName }}
+  {{ currentPokemonName }} a été ajouté !
 </div>
 
 <ng-template #noPokemon>
@@ -25,6 +25,20 @@
     Aucun Pokémon n'a été ajouté.
   </div>
 </ng-template>
+
+<ng-container class="d-flex justify-content-center" [ngSwitch]="pokemons.length">
+  <div class="mb-4 d-flex justify-content-center">
+    <p *ngSwitchCase="0">
+      Vous n'avez aucun Pokémon.
+    </p>
+    <p *ngSwitchCase="6">
+      Vous avez 6 Pokemons, votre sac ne peut pas en contenir d'avantage. Les prochains seront envoyés dans le PC.
+    </p>
+    <p *ngSwitchDefault>
+      Pokemons : {{ pokemons.length }}
+    </p>
+  </div>
+</ng-container>
 
 <ng-container *ngFor="let pokemon of pokemons; let i = index">
   <app-pokemon-item class="pokemon-list" [routerLink]="['/pokemon', pokemon.name]" [name]="pokemon.name"
