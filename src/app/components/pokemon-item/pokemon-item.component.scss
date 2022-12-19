@@ -23,6 +23,9 @@ $sex-colors: (
 
 .pokemon-item {
 
+  display: flex;
+  text-align: space-around;
+  max-width: 50%;
   height: 75px;
   border-radius: 5px;
   margin: 0px 0px 5px 0px;

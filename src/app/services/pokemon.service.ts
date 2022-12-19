@@ -13,19 +13,19 @@ export class PokemonService {
       name: 'bulbizarre',
       picture: 'https://www.pokepedia.fr/images/thumb/e/ef/Bulbizarre-RFVF.png/250px-Bulbizarre-RFVF.png',
       sex: 'male',
-      level: 3,
+      level: 1,
     },
     {
       name: 'herbizarre',
       sex: 'female',
       picture: 'https://www.pokepedia.fr/images/thumb/4/44/Herbizarre-RFVF.png/250px-Herbizarre-RFVF.png',
-      level: 2,
+      level: 50,
     },
     {
       name: 'florizarre',
       sex: 'male',
       picture: 'https://www.pokepedia.fr/images/thumb/4/42/Florizarre-RFVF.png/250px-Florizarre-RFVF.png',
-      level: 2,
+      level: 51,
     },
   ];
 

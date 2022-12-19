@@ -1,10 +1,11 @@
-<div class="pokemon-item row align-items-center"
+<div class="pokemon-item container align-items-center"
   [ngClass]="{'sex-male': this.sex === 'male', 'sex-female': this.sex === 'female'}">
   <div class="col-4">
     <img class="image" [src]="picture ?? defaultImg" alt="pokemon image">
   </div>
   <div class="col-5 name-col">
-    {{ name }} - {{ level }}
+    {{ name }}
+    <span class="badge rounded-pill" [ngStyle]="{'backgroundColor': generateColor()}">{{level}}</span>
   </div>
   <div class="col-3">
     <button (click)="onDeleteBtnClick()" class="btn btn-danger">Supprimer</button>

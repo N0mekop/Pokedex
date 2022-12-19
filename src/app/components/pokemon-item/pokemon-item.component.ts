@@ -27,4 +27,8 @@ export class PokemonItemComponent {
   onDeleteBtnClick() {
     this.onDelete.emit(this.name);
   }
+
+  generateColor() {
+    return this.level > 50 ? '#00dd00' : '#882222';
+  }
 }

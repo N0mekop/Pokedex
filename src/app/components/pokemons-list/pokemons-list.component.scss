@@ -6,10 +6,7 @@
   border-radius: 5px;
 }
 
-.add-btn {
-  margin: 0;
-  position: absolute;
-  top: 7rem;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.pokemon-list {
+  display: flex;
+  justify-content: center;
 }
