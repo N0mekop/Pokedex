@@ -1,4 +1,5 @@
-<div class="pokemon-item row p-3 align-items-center" [ngClass]="{'sex-male': this.sex === 'male', 'sex-female': this.sex === 'female'}">
+<div class="pokemon-item row align-items-center"
+  [ngClass]="{'sex-male': this.sex === 'male', 'sex-female': this.sex === 'female'}">
   <div class="col-4">
     <img class="image" [src]="picture ?? defaultImg" alt="pokemon image">
   </div>
@@ -9,5 +10,3 @@
     <button (click)="onDeleteBtnClick()" class="btn btn-danger">Supprimer</button>
   </div>
 </div>
-
-

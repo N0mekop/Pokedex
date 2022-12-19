@@ -23,6 +23,10 @@ $sex-colors: (
 
 .pokemon-item {
 
+  height: 75px;
+  border-radius: 5px;
+  margin: 0px 0px 5px 0px;
+
   &.sex-male {
     background-color: map-deep-get($sex-colors, "male", "color");
     color: map-deep-get($sex-colors, "male", "text");

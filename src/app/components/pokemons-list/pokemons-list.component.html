@@ -2,19 +2,20 @@
 
 <div class="mb-4 row">
   <div class="col-9">
-    <input type="text" class="form-control" [(ngModel)]="currentPokemonName">
-    <input type="text" class="form-control" [(ngModel)]="currentPokemonPicture">
-    <select [(ngModel)]="currentPokemonSex">
-      <option ngValue="male">male</option>
-      <option ngValue="female">female</option>
+    <input type="text" class="form-control" placeholder="Pokémon" [(ngModel)]="currentPokemonName">
+    <input type="text" class="form-control" placeholder="Image" [(ngModel)]="currentPokemonPicture">
+    <select [(ngModel)]="currentPokemonSex" class="gender-choice">
+      <option ngValue="male">Male</option>
+      <option ngValue="female">Femelle</option>
     </select>
   </div>
   <div class="col-3">
-    <button (click)="onAddPokemonBtnClick()" [disabled]="isButtonDisabled" class="btn btn-primary">Add</button>
+    <button (click)="onAddPokemonBtnClick()" [disabled]="isButtonDisabled" class="btn btn-primary add-btn">Ajouter
+      Pokémon</button>
   </div>
 </div>
 
-<div class="mb-4" *ngIf="hasAddedAPokemon; else noPokemon">
+<div class="mb-4 text-success" *ngIf="hasAddedAPokemon; else noPokemon">
   Un pokémon a été ajouté
 </div>
 
@@ -25,7 +26,6 @@
 </ng-template>
 
 <ng-container *ngFor="let pokemon of pokemons; let i = index">
-  <app-pokemon-item [routerLink]="['/pokemon', pokemon.name]" [name]="pokemon.name" [picture]="pokemon.picture" [sex]="pokemon.sex" (onDelete)="onDeletePokemon($event, i)" [level]="pokemon.level"></app-pokemon-item>
+  <app-pokemon-item [routerLink]="['/pokemon', pokemon.name]" [name]="pokemon.name" [picture]="pokemon.picture"
+    [sex]="pokemon.sex" (onDelete)="onDeletePokemon($event, i)" [level]="pokemon.level"></app-pokemon-item>
 </ng-container>
-
-

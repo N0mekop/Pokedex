@@ -12,7 +12,7 @@ import { Pokemon, PokemonSex } from 'src/app/typings/pokemon';
 })
 export class PokemonsListComponent {
   isButtonDisabled = true;
-  currentPokemonName = 'bulbizarre';
+  currentPokemonName = 'Pokémon';
   currentPokemonPicture?: string;
   currentPokemonSex: PokemonSex = 'male';
   hasAddedAPokemon = false;

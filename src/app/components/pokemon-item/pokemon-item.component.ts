@@ -9,7 +9,7 @@ import { Pokemon, PokemonSex } from 'src/app/typings/pokemon';
 })
 export class PokemonItemComponent {
   @Input() name = 'Bulbizarre';
-  @Input() level = 10;
+  @Input() level = Math.round(Math.random() * 100);
   @Input() picture?: string;
   @Input() sex: PokemonSex = 'male';
   @Output() onDelete = new EventEmitter<string>();

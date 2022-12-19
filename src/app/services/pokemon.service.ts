@@ -11,14 +11,20 @@ export class PokemonService {
   pokemons: Pokemon[] = [
     {
       name: 'bulbizarre',
-      picture: 'https://www.pokepedia.fr/images/thumb/1/17/Dracaufeu-RFVF.png/764px-Dracaufeu-RFVF.png?20141019190201',
+      picture: 'https://www.pokepedia.fr/images/thumb/e/ef/Bulbizarre-RFVF.png/250px-Bulbizarre-RFVF.png',
       sex: 'male',
       level: 3,
     },
     {
-      name: 'carapuce',
+      name: 'herbizarre',
       sex: 'female',
-      picture: 'https://www.pokepedia.fr/images/thumb/1/1f/Galeking-RS.png/596px-Galeking-RS.png?20161226235218',
+      picture: 'https://www.pokepedia.fr/images/thumb/4/44/Herbizarre-RFVF.png/250px-Herbizarre-RFVF.png',
+      level: 2,
+    },
+    {
+      name: 'florizarre',
+      sex: 'male',
+      picture: 'https://www.pokepedia.fr/images/thumb/4/42/Florizarre-RFVF.png/250px-Florizarre-RFVF.png',
       level: 2,
     },
   ];
